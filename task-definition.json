@@ -7,10 +7,9 @@
       "environmentFiles": null,
       "logConfiguration": {
         "logDriver": "awslogs",
-        "secretOptions": null,
         "options": {
           "awslogs-group": "/ecs/aorta-core-task-definition",
-          "awslogs-region": "us-east-2",
+          "awslogs-region": "af-south-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -26,7 +25,6 @@
       "linuxParameters": null,
       "cpu": 0,
       "environment": [],
-      "resourceRequirements": null,
       "ulimits": null,
       "dnsServers": null,
       "mountPoints": [],
@@ -37,7 +35,7 @@
       "memoryReservation": null,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "757576342723.dkr.ecr.us-east-2.amazonaws.com/aorta-core:latest",
+      "image": "757576342723.dkr.ecr.af-south-1.amazonaws.com/aorta-core:latest",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -54,7 +52,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "aorta-core-cnt"
+      "name": "aorta-core"
     }
   ],
   "placementConstraints": [],
@@ -64,7 +62,7 @@
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:757576342723:task-definition/aorta-core-task-definition:1",
+  "taskDefinitionArn": "arn:aws:ecs:af-south-1:757576342723:task-definition/aorta-core-task-definition:1",
   "family": "aorta-core-task-definition",
   "requiresAttributes": [
     {
