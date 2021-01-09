@@ -13,7 +13,7 @@ public class Runner {
             found = true;
         }
         if (!found) {
-            System.out.println("I didn't find the text  ");
+            System.out.println("I didn't find the text");
         }
     }
 }
